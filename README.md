@@ -5,7 +5,7 @@ Sample application for Liveness SDK
 
 #### 1. build.grade (project):
 
-```
+```kotlin
 allprojects {
     repositories {
         jcenter()
@@ -23,17 +23,30 @@ allprojects {
 
 #### 2. build.grade (app):
 
-
-```
+- Incase of Verion 1, Add following:
+```java
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.7'
+    'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.7' // without Face Mask Detection
 }
 ```
+- Incase of Verion 2, Add following:
 
+```java
+android {
+    ....
+    aaptOptions {
+        noCompress '.tflite'
+    }
+}
+dependencies {
+    ....
+    'implementation 'io.surepass.sdk:liveness-android-sdk:2.0.0' // with Face Mask Detection
+}
+```
 #### 3. Inside Application:
 
-```
+```kotlin
 import io.surepass.livenessandroidsdk.ui.InitSDK
 
   class  MainActivity : AppCompatActivity() {
