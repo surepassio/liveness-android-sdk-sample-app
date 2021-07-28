@@ -27,7 +27,7 @@ allprojects {
 ```
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.6'
+    'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.7'
 }
 ```
 
