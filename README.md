@@ -1,7 +1,7 @@
 # Liveness Android SDK
 Sample application for Liveness SDK
 
-Step to use the SDK below as well:
+## Step to use the SDK as below mentioned:
 
 #### 1. build.grade (project):
 
