@@ -152,3 +152,9 @@ Returns HTTP status of 200 OK, when the Liveness process has been completed succ
   "success": false
 }
 ```
+
+### Custom Language Support (optional)
+  The SDK language can be customized by overriding the string in main `strings.xml`. At the moment, we support and maintain translations for English (default) only.
+
+  - The keys can be found in [`io/surepass/sdk/liveness-android-sdk/app/src/main/res/values/strings.xml`](/io/surepass/sdk/liveness-android-sdk/app/src/main/res/values/strings.xml). They can be passed as a string in the main application `strings.xml` to override.
+
