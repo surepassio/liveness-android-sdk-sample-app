@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Liveness</string>
+    <string name="progress_bar_text_title">wait...</string>
+    <string name="progress_bar_text_desc">we are fetching details...</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="identity_verification">Liveness Verification</string>
+    <string name="say_out_each_digit">Say out each digit loud</string>
+    <string name="finish_recording">Finish Recording</string>
+    <string name="next_step">Next Step</string>
+    <string name="finish">Finish</string>
+    <string name="please_put_face">Please put your face inside the circle</string>
+    <string name="continue_english">Continue</string>
+    <string name="record_a_selfie_video">Record a selfie video</string>
+    <string name="lets_make">Let’s make sure nobody’s impersonating you</string>
+    <string name="desctiption_1">Speak out loud and move your head</string>
+    <string name="desctiption_2">Finish actions in under 25 seconds</string>
+
+    <!--    dialog string-->
+    <string name="not_responding_title">Looks like you are not responding</string>
+    <string name="end_session_title">End Session</string>
+    <string name="end_session_desc">Do you want to end session?</string>
+    <string name="end_session_cancel">Cancel</string>
+    <string name="end_session_exit">Exit</string>
+
+    <!--    permission string-->
+    <string name="permission_screen_title">We need few permissions</string>
+    <string name="permission_screen_button">Allow Permission</string>
+    <string name="permission_screen_camera_title">Camera access</string>
+    <string name="permission_screen_camera_desc">Enable your camera to take pictures with your mobile.</string>
+    <string name="permission_screen_microphone_title">Microphone access</string>
+    <string name="permission_screen_microphone_desc">Enable your microphone to record audio.</string>
+    <string name="permission_screen_storage_title">Storage access</string>
+    <string name="permission_screen_storage_desc">Allow storage access to save your to recorded video.</string>
+    <string name="permission_screen_location_title">Location access</string>
+    <string name="permission_screen_location_desc">Enable location access to save your location coordinates.</string>
+
+     <!--    multiple face dialog string -->
+     <string name="multiple_faces_desc">Multiple faces not allowed during face verification</string>
+     <string name="multiple_faces_title">Multiple Faces</string>
+
+    <!--    face mask dialog string -->
+    <string name="face_mask_found_desc">Remove your face mask and Try again.</string>
+    <string name="face_mask_found_title">Face Mask Found</string>
+
+    <!--    face not found -->
+    <string name="face_not_found_title">Face Not Found</string>
+    <string name="face_not_found_desc">Do not leave the screen. Please try again.</string>
+
+    <!--    exceed attempts-->
+    <string name="shoulder_movement_attempt_desc">You have exceeded number of allowed attempts. Please try again.</string>
+    <string name="shoulder_movement_attempt_title">Exceeded Attempts</string>
+
+
+    <string name="submit_video">Submit Video</string>
+    <string name="retake_video">Retake Video</string>
+
+    <string name="submit_image">Submit Image</string>
+    <string name="retake_image">Retake Image</string>
+
+    <string name="verification_complete">Verification complete</string>
+    <string name="position_face">Position your face in the oval</string>
+    <string name="wrong_side">Wrong Side</string>
+
+    <string name="look_left">Look over your left shoulder and back</string>
+    <string name="look_right">Look over your right shoulder and back</string>
+    <string name="blink_eyes">Blink your eyes</string>
+</resources>
