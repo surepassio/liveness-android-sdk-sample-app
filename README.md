@@ -1,4 +1,4 @@
-# liveness-android-sdk-sample-app
+# Liveness Android SDK
 Sample application for Liveness SDK
 
 Step to use the SDK below as well:
@@ -26,6 +26,7 @@ allprojects {
 
 ```
 dependencies {
+    ....
     'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.6'
 }
 ```
@@ -57,5 +58,97 @@ import io.surepass.livenessandroidsdk.ui.InitSDK
             }
         }
     }
+}
+```
+
+### Handling the responses in callback
+
+SurePass Liveness Android SDK returns following response depending on the status of process.
+
+**Note:** Only the **200 SUCCESS** status sent to `onActivityResult` function represents successful process. Rest, all the other responses are dispatched to the `onActivityResult` function are errors.
+
+- #### 200 SUCCESS
+
+Returns HTTP status of 200 OK, when the Liveness process has been completed successfully.
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 200,
+  "message_code": "SUCCESS",
+  "message": "Successfully Completed",
+  "success": true
+}
+```
+
+- #### 401 UNAUTHORIZED ACCESS
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 401,
+  "message_code": "UNAUTH_ACCESS",
+  "message": "Invalid Token",
+  "success": false
+}
+```
+
+- #### 403 MAXIMUM RETRY REACHED (TOKEN EXPIRED)
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 403,
+  "message_code": "TOKEN_EXPIRED",
+  "message": "Token Expired",
+  "success": false
+}
+```
+
+- #### 433 SESSION CLOSED BY USER
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 433,
+  "message_code": "SDK_CLOSED",
+  "message": "User closed the SDK before process completed",
+  "success": false
+}
+```
+
+- #### 500 INTERNAL SERVER ERROR
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 500,
+  "message_code": "INT_SERVER_ERROR",
+  "message": "Something went wrong.Try again later",
+  "success": false
+}
+```
+
+- #### 501 TIMEOUT ERROR
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 501,
+  "message_code": "TIMEOUT_ERROR",
+  "message": "Session Timeout Occurred",
+  "success": false
 }
 ```
