@@ -41,7 +41,7 @@ android {
 }
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:2.0.0' // with Face Mask Detection
+    'implementation 'io.surepass.sdk:liveness-android-sdk:2.0.1' // with Face Mask Detection
 }
 ```
 #### 3. Inside Application:
