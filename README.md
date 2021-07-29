@@ -27,7 +27,7 @@ allprojects {
 ```java
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.7' // without Face Mask Detection
+    'implementation 'io.surepass.sdk:liveness-android-sdk:1.0.8' // without Face Mask Detection
 }
 ```
 - Incase of Verion 2, Add following:
