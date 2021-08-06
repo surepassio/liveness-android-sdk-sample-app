@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Liveness</string>
-    <string name="progress_bar_text_title">wait...</string>
-    <string name="progress_bar_text_desc">we are fetching details...</string>
+    <string name="progress_bar_text_title">Please wait...</string>
+    <string name="progress_bar_text_desc">We are uploading details...</string>
     <string name="start_recording">Start Recording</string>
     <string name="identity_verification">Liveness Verification</string>
     <string name="say_out_each_digit">Say out each digit loud</string>
