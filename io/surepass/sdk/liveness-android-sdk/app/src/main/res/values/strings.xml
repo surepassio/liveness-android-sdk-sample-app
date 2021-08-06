@@ -34,7 +34,9 @@
     <string name="permission_screen_location_title">Location access</string>
     <string name="permission_screen_location_desc">Enable location access to save your location coordinates.</string>
 
-     <!--    multiple face dialog string -->
+    <string name="request_permission">This sample needs camera permission.</string>
+
+     <!--    impersonating dialog string -->
      <string name="multiple_faces_desc">Multiple faces not allowed during face verification</string>
      <string name="multiple_faces_title">Multiple Faces</string>
 
@@ -64,4 +66,5 @@
     <string name="look_left">Look over your left shoulder and back</string>
     <string name="look_right">Look over your right shoulder and back</string>
     <string name="blink_eyes">Blink your eyes</string>
+    <string name="smile_test">Show your smiling face</string>  
 </resources>
