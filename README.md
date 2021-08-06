@@ -41,7 +41,7 @@ android {
 }
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:2.0.1' // with Face Mask Detection
+    'implementation 'io.surepass.sdk:liveness-android-sdk:2.0.8' // with Face Mask Detection
 }
 ```
 #### 3. Inside Application:
@@ -58,6 +58,7 @@ import io.surepass.livenessandroidsdk.ui.InitSDK
         val token = "TOKEN"
         val intent = Intent(this, InitSDK::class.java)
         intent.putExtra("token",token)
+        intent.putExtra("videoPlayBackDisable",true) // Optional (Default: false)
 
         startActivityForResult(intent , 10000)
     }
