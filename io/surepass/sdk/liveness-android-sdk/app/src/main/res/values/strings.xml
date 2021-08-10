@@ -22,6 +22,11 @@
     <string name="end_session_cancel">Cancel</string>
     <string name="end_session_exit">Exit</string>
 
+    <!--    setting strings-->
+    <string name="setting_button_text">Go To Settings</string>
+    <string name="setting_msg_text">You have to allow permissions from app settings</string>
+
+
     <!--    permission string-->
     <string name="permission_screen_title">We need few permissions</string>
     <string name="permission_screen_button">Allow Permission</string>
@@ -35,15 +40,15 @@
     <string name="permission_screen_location_desc">Enable location access to save your location coordinates.</string>
 
     <string name="request_permission">This sample needs camera permission.</string>
-
-     <!--    impersonating dialog string -->
+  
+    <!--    impersonating dialog string -->
      <string name="multiple_faces_desc">Multiple faces not allowed during face verification</string>
      <string name="multiple_faces_title">Multiple Faces</string>
 
     <!--    face mask dialog string -->
     <string name="face_mask_found_desc">Remove your face mask and Try again.</string>
     <string name="face_mask_found_title">Face Mask Found</string>
-
+    
     <!--    face not found -->
     <string name="face_not_found_title">Face Not Found</string>
     <string name="face_not_found_desc">Do not leave the screen. Please try again.</string>
@@ -66,5 +71,5 @@
     <string name="look_left">Look over your left shoulder and back</string>
     <string name="look_right">Look over your right shoulder and back</string>
     <string name="blink_eyes">Blink your eyes</string>
-    <string name="smile_test">Show your smiling face</string>  
+    <string name="smile_test">Show your smiling face</string>
 </resources>
