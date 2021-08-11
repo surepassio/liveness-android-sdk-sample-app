@@ -2,6 +2,8 @@
     <string name="app_name">Liveness</string>
     <string name="progress_bar_text_title">Please wait...</string>
     <string name="progress_bar_text_desc">We are uploading details...</string>
+    <string name="uploading_details_progress_bar_desc">We are uploading details...</string>
+    <string name="uploading_details_progress_bar_title">Please wait...</string>
     <string name="start_recording">Start Recording</string>
     <string name="identity_verification">Liveness Verification</string>
     <string name="say_out_each_digit">Say out each digit loud</string>
