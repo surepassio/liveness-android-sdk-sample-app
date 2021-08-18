@@ -56,8 +56,10 @@ import io.surepass.livenessandroidsdk.ui.InitSDK
 
         //token is needed when using liveness sdk
         val token = "TOKEN"
+        val env = "PREPROD" // "PROD" or "PREPROD"
         val intent = Intent(this, InitSDK::class.java)
         intent.putExtra("token",token)
+        intent.putExtra("env",env)
         intent.putExtra("videoPlayBackDisable",true) // Optional (Default: false)
 
         startActivityForResult(intent , 10000)
