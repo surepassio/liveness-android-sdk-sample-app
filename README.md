@@ -41,7 +41,7 @@ android {
 }
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:2.0.8' // with Face Mask Detection
+    'implementation 'io.surepass.sdk:liveness-android-sdk:2.1.3' // with Face Mask Detection
 }
 ```
 #### 3. Inside Application:
@@ -138,6 +138,7 @@ Returns HTTP status of 200 OK, when the Liveness process has been completed succ
   "success": false
 }
 ```
+`Alternative Message`: "Face Not Found", "Face Mask Found", "Exceeded Attempts", "Multiple Faces Found"
 
 - #### 500 INTERNAL SERVER ERROR
 
