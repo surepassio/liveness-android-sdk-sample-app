@@ -127,6 +127,20 @@ Returns HTTP status of 200 OK, when the Liveness process has been completed succ
 }
 ```
 
+- #### 450 DEVICE NOT SUPPORTED
+
+```json
+{
+  "data": {
+    "client_id": "CLIENT_ID"
+  },
+  "status_code": 450,
+  "message_code": "UNSUPPORTED_DEVICE",
+  "message": "Device not supported",
+  "success": false
+}
+```
+
 - #### 433 SESSION CLOSED BY USER
 
 ```json
@@ -151,7 +165,7 @@ Returns HTTP status of 200 OK, when the Liveness process has been completed succ
   },
   "status_code": 500,
   "message_code": "INT_SERVER_ERROR",
-  "message": "Something went wrong.Try again later",
+  "message": "Something went wrong. Try again later",
   "success": false
 }
 ```
