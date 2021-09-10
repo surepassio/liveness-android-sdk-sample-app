@@ -58,11 +58,13 @@ import io.surepass.livenessandroidsdk.ui.InitSDK
         val token = "TOKEN"
         val env = "PREPROD" // "PROD" or "PREPROD"
         val videoUpload = false
+        var instructions  = arrayOf("Clear you background","Remove glasses",...)
         val intent = Intent(this, InitSDK::class.java)
         intent.putExtra("token",token)
         intent.putExtra("env",env) // Optional (Default: PREPROD)
         intent.putExtra("videoUpload",videoUpload) // Optional (Default: true)
         intent.putExtra("videoPlayBackDisable",true) // Optional (Default: false)
+        intent.putExtra("instructionsArray" , instructions)
         startActivityForResult(intent , 10000)
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
