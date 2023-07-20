@@ -23,7 +23,7 @@ allprojects {
 
 #### 2. build.grade (app):
 
-- Incase of Verion 1, Add following:
+- Incase of Version 1, Add following:
 ```java
 dependencies {
     ....
@@ -41,7 +41,7 @@ android {
 }
 dependencies {
     ....
-    'implementation 'io.surepass.sdk:liveness-android-sdk:2.1.9' // with Face Mask Detection
+    'implementation 'io.surepass.sdk:liveness-android-sdk:2.2.2' // with Face Mask Detection
 }
 ```
 #### 3. Inside Application:
